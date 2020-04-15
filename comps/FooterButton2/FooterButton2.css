@@ -1,0 +1,17 @@
+#footerbox2{
+    background-color: #8E8D8D;
+    border-left: 2px solid #707070;
+    width: 187.5px;
+    height: 56px;
+    left: 187.5px;
+    position: relative;
+}
+
+#rightarrow{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 5px;
+}
