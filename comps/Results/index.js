@@ -8,20 +8,22 @@ const Results = () => <div>
         </div>
         <div id="saving">
             <span>You are saving:</span><br />
-            $<span id="gas_save"></span> in gas per year
+            $<div id="gas_save">X</div> in gas per year
         </div>
         <div id="produce">
             <span>You produce:</span><br />
-            <span id="carbon_produce"></span> less carbon per year
+            <div id="carbon_produce">X</div> less carbon per year
         </div>
         <div id="suggestion">
             <span>We suggest these cars:</span>
             <div id="cars_suggest">
                 <div id="cars_box">
                     <div id="car_1">
+                        <img src="" />
                         <div id="model_name">Model</div>
                     </div>
-                    <div id="car_1">
+                    <div id="car_2">
+                    <img src="" />
                         <div id="model_name">Model</div>
                     </div>
                 </div>
