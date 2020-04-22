@@ -11,6 +11,6 @@ const Header = ({logo}) => <div className="header">
 
 
 Header.defaultProps = {
-    logo:defImg,
+    // logo:defImg,
 }
 export default Header;
