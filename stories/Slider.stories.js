@@ -9,3 +9,4 @@ export default {
 
 export const AdjustSlider = () => <Slider 
 />;
+
