@@ -1,0 +1,13 @@
+.textCont {
+    width:343px;
+    height:118px;
+    background-color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+   font-family: Arial, Helvetica, sans-serif;
+   border-radius: 18px;
+   box-shadow: 2px 2px 8px lightgray;
+   font-size: 24px;
+   font-weight:500;
+}
