@@ -1,0 +1,97 @@
+#results {
+    width: 330px;
+    height: 445px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+    border-radius: 10px;
+
+border: 5px rgb(223, 255, 160) solid;
+
+}
+
+#header {
+    position: relative;
+    align-self: center;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(180, 231, 112);
+    font-size: 20pt;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 7px 0px 10px 0px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+#saving, #produce {
+    font-size: 18pt;
+    margin-bottom: 20px;
+}
+
+#saving span {
+    color: rgb(41, 163, 211);
+    font-weight: bold;
+    
+}
+
+#gas_save {
+    color: tomato;
+    display: inline-block;
+    font-weight: bolder;
+}
+
+#carbon_produce {
+    color: tomato;
+    display: inline-block;
+    font-weight: bolder;
+}
+
+#produce span {
+    color: rgb(241, 119, 70);
+    font-weight: bold;
+}
+
+#suggestion {
+    height: 170px;
+    margin-top: 10px;
+    font-size: 18pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+#cars_box {
+    display: flex;
+    justify-content: space-between;
+}
+
+#car_1, #car_2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 140px;
+    height: 100px;
+    margin-bottom: 17px;
+    border-radius: 10px;
+    background-color: darkgray;
+}
+
+#model_name {
+    display: flex;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 120px;
+    height: 30px;
+    top: 85px;
+    font-size: 12pt;
+    font-weight: normal;
+    align-items: center;
+    justify-content: center;
+}
+
+#saving, #produce, #suggestion {
+    background-color: rgb(238, 238, 238);
+    border-radius: 10px;
+    padding: 5px 10px;
+}
