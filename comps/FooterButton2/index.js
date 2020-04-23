@@ -8,4 +8,4 @@ const FooterButton2 = () => <div id="footerbox2">
     </div>
 </div>
 
-export default FooterButton2
+export default FooterButton2;

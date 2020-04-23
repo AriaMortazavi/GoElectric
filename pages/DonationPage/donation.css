@@ -2,9 +2,10 @@
     position: absolute;
     top: 0;
 }
-.home_button {
-    position: absolute;
-    bottom: 140px;
+#home_button {
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
 }
 
 #donation_page {

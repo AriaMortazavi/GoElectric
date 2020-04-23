@@ -8,6 +8,5 @@
 }
 
 .home_button {
-    position: absolute;
-    bottom: 140px;
+    cursor: pointer;
 }
