@@ -1,33 +1,44 @@
 import React, { useState, useEffect } from 'react';
-import './resultspage.css';
+import './donation.css';
 import Header from '../../comps/Header';
 import QuestionBoxes from '../../comps/QuestionBoxes';
-import Results from '../../comps/Results';
 import CustomButtons from '../../comps/CustomButtons';
 import HomeButton from '../../comps/HomeButton';
 import FooterButton1 from '../../comps/FooterButton1';
 import FooterButton2 from '../../comps/FooterButton2';
+import Icon from '../../comps/Icon';
 
-const ResultsPage = () => {
+const DonationPage = () => {
 
     return <div id="results_page">
 
-        <Header
-            margin="0px 0px 10px 0px"
-        />
+        <div className="header_donation_page">
+            <Header
+                margin="0px 0px 10px 0px"
+            />
+        </div>
 
         <QuestionBoxes
-            margin="0px 0px 10px 0px"
-            text="Results are in!"
+            margin="0px 0px 50px 0px"
+            text="Consider donating to TeamTrees.org so they can plant trees all around the world?
+            Every dollar equals to 1 tree planted.!"
         />
 
-        <Results />
+        <Icon />
 
         <CustomButtons
-            text="Next"
+            text="Sure!"
             width="230px"
-            margin="10px 0px 90px 0px"
+            margin="20px"
         />
+
+        <CustomButtons
+            text="No Thank You"
+            width="230px"
+            margin="50px"
+            background="gray"
+        />
+
 
         <div className="home_button"><HomeButton /></div>
 
@@ -42,4 +53,4 @@ const ResultsPage = () => {
     </div>
 }
 
-export default ResultsPage;
+export default DonationPage;

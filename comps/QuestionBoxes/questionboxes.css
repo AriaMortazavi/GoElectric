@@ -2,7 +2,7 @@
     width:343px;
     height:118px;
     background-color: white;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
    font-family: Arial, Helvetica, sans-serif;

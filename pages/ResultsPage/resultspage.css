@@ -1,7 +1,14 @@
 #results_page {
-    border: 1px red solid;
-    width: 440px;
     height: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    width: 375px;
+    height: 812px;
+}
+
+.home_button {
+    position: absolute;
+    bottom: 140px;
 }
