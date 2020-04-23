@@ -43,9 +43,6 @@ const DonationPage = () => {
         </div>
         </Link>
 
-        <Link href="/Page1"><div id="home_button"><HomeButton /></div>
-        </Link>
-
     </div>
 }
 

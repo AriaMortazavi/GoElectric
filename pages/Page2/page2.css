@@ -29,13 +29,13 @@
 }
 .indicator {
     position: relative;
-    top:340px;
+    top:230px;
 }
 .footer {
     display: flex;
     flex-direction: row;
     position: absolute;
-    bottom:-337px;
+    top:812px;
     /* background-color: #eebbdd; */
     width:375px;
     height:84px;

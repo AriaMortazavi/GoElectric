@@ -21,17 +21,28 @@ const Page2 = ({ img }) => <div className="main2">
     <div className="imageOne">
         <ImageButtons img={imageOne} />
     </div>
+
+    <Link href="/VehicleType">
     <div className="buttonOne">
         <CustomButtons width="260px" height="52px" padding="none" />
     </div>
+    </Link>
+
     <div className="imageTwo">
         <ImageButtons img={imageTwo} />
     </div>
+    <Link href="/VehicleType">
+
     <div className="buttonTwo">
         <CustomButtons width="260px" height="52px" padding="none" text="Diesel" />
     </div>
+    
+    </Link>
     <div className="indicator">
-        <Indicator />
+        <Indicator 
+          border1 = "2px orange solid"
+          active1 = "orange"
+        />
     </div>
     <div className="footer">
     <Link href="/Page1">
