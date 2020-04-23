@@ -1,0 +1,7 @@
+#results_page {
+    border: 1px red solid;
+    width: 440px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
