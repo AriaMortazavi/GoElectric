@@ -73,7 +73,10 @@ const VehicleType = ({}) => <div className="vehiclePage">
   />
   </div>
   </div>
-  <Indicator/>
+  <Indicator
+  border2 = "2px orange solid"
+  active2 = "orange"
+  />
   <div className="roundHome">
   <HomeButton/>
   </div>
