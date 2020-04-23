@@ -5,8 +5,8 @@ import QuestionBoxes from '../../comps/QuestionBoxes';
 import Results from '../../comps/Results';
 import CustomButtons from '../../comps/CustomButtons';
 import HomeButton from '../../comps/HomeButton';
-import FooterButton1 from '../../comps/FooterButton1';
-import FooterButton2 from '../../comps/FooterButton2';
+import Link from 'next/link';
+
 
 const ResultsPage = () => {
 
@@ -23,22 +23,18 @@ const ResultsPage = () => {
 
         <Results />
 
-        <CustomButtons
+        <Link href="/DonationPage"><div><CustomButtons
             text="Next"
             width="230px"
             margin="10px 0px 90px 0px"
-        />
+        /></div>
+        
+        </Link>
 
-        <div className="home_button"><HomeButton /></div>
+        <Link href="/Page1"><div id="home_button"><HomeButton /></div>
+        </Link>
 
-        <div className="footerB">
-            <FooterButton1
-                padding="0px"
-            />
-        </div>
-        <div className="footerF">
-            <FooterButton2 />
-        </div>
+
     </div>
 }
 

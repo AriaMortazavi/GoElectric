@@ -4,9 +4,9 @@ import Header from '../../comps/Header';
 import QuestionBoxes from '../../comps/QuestionBoxes';
 import CustomButtons from '../../comps/CustomButtons';
 import HomeButton from '../../comps/HomeButton';
-import FooterButton1 from '../../comps/FooterButton1';
-import FooterButton2 from '../../comps/FooterButton2';
 import Icon from '../../comps/Icon';
+import Link from 'next/link';
+
 
 const DonationPage = () => {
 
@@ -20,7 +20,7 @@ const DonationPage = () => {
 
         <QuestionBoxes
             margin="0px 0px 50px 0px"
-            size = "18px"
+            size="18px"
             text="Consider donating to TeamTrees.org so they can plant trees all around the world?
             Every dollar equals to 1 tree planted.!"
         />
@@ -33,24 +33,19 @@ const DonationPage = () => {
             margin="20px"
         /></a>
 
-        <CustomButtons
-            text="No Thank You"
-            width="230px"
-            margin="50px"
-            background="gray"
-        />
-
-
-        <div className="home_button"><HomeButton /></div>
-
-        <div className="footerB">
-            <FooterButton1
-                padding="0px"
+        <Link href="/Page1"><div>
+            <CustomButtons
+                text="No Thank You"
+                width="230px"
+                margin="50px"
+                background="gray"
             />
         </div>
-        <div className="footerF">
-            <FooterButton2 />
-        </div>
+        </Link>
+
+        <Link href="/Page1"><div id="home_button"><HomeButton /></div>
+        </Link>
+
     </div>
 }
 
