@@ -1,0 +1,21 @@
+.main {
+    width:375px;
+    height:812px;
+    /* background-color: #DAD; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.buttonCont {
+    width:239px;
+    height:67px;
+    position:relative;
+    /* background-color: #DEB; */
+    bottom: 50px;
+}
+.terms {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: lightgrey;
+    font-size: 12px;
+}
