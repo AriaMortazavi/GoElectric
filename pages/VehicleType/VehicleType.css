@@ -4,6 +4,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 375px;
+    height: 812px;
 }
 
 .header{
@@ -37,13 +39,13 @@
 .footerB{
     position: absolute;
     top: 780px; 
-    left:732px;
     z-index: -1;
+    left: 5px;
 }
 
 .footerF{
     position: absolute;
     top: 780px;  
-    left:732px;
+    left: 5px;
     z-index: -1;
 }

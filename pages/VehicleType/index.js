@@ -1,4 +1,6 @@
 import React from 'react';
+import Link from 'next/link';
+import Router from 'next/router';
 import "./VehicleType.css";
 import Header from '../../comps/Header';
 import Indicator from '../../comps/Indicator';
