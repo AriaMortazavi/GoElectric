@@ -4,7 +4,8 @@ import Indicator from '../comps/Indicator'
 import Icon from '../comps/Icon'
 
 export default {
-  title: 'Components',
+  title: 'Mike\'s Components',
+  component: Results, Indicator, Icon
 };
 
 export const ResultsComp = () => <Results />;
