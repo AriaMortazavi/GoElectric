@@ -23,7 +23,11 @@ const KilometerCounter = ({}) => <div className="KilometerCounterPage">
   <div className="slider">
     <Slider/>
   </div>
-  <Indicator/>
+  <Indicator
+    border3 = "2px orange solid"
+    active3 = "orange"
+  
+  />
   <div className="roundHome">
   <HomeButton/>
   </div>
