@@ -1,0 +1,16 @@
+#homecircle{
+    width: 56px;
+    height: 56px;
+    background: linear-gradient(to left, #ffa11d 5%, #FF5F5F 100%);
+    border-radius: 50%;
+    border: solid white 10px;
+}
+
+#homeicon{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top:10px;
+}

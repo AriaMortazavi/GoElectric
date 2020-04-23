@@ -1,8 +1,8 @@
 import React from 'react';
 import "./cb.css";
 
-const CustomButton = ({text, color, fromclick}) => <div 
-    style={{backgroundColor:color, boxShadow:"1px 1px 5px" + color}}
+const CustomButton = ({text, fontSize, background, fromclick, width, height, color}) => <div id="button_parent"
+    style={{fontSize, width, height, background, color}}
     className="custom_button_box">
     <div className="custom_button_box_inner"
     onClick={fromclick}>
@@ -14,8 +14,13 @@ function buttonClick(){
 }
 
 CustomButton.defaultProps = {
-    text: "Default Button",
-    color: "rgb(103, 215, 81)",
-    fromclick:buttonClick
+    fromclick:buttonClick,
+    text : "Gasoline",
+    width : "250px",
+    height : "40px",
+    background : "#80AD4D",
+    color: "white", 
 }
 export default CustomButton;
+
+// I need to find out how to do :active for different versions of this component
