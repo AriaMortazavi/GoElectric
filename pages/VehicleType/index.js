@@ -11,16 +11,24 @@ import FooterButton1 from '../../comps/FooterButton1';
 import FooterButton2 from '../../comps/FooterButton2';
 import ImageButtons from '../../comps/ImageButtons';
 
+const suvImg = require('./suv.png');
+const sedanImg = require('./sedan.png');
+const motorcycleImg = require('./motorcycle.png');
+
 const VehicleType = ({}) => <div className="vehiclePage">
   <div className="header">
   <Header
   />
   </div>
   <div className="questions">
-  <QuestionBoxes/>
+  <QuestionBoxes
+  text = "What type of vehicle do you currently own?"
+  />
   </div>
   <div className="imgB">
-  <ImageButtons/>
+  <ImageButtons
+  img = {suvImg}
+  />
   <div className="txt_button">
   <CustomButtons 
   text = "SUV"
@@ -34,10 +42,12 @@ const VehicleType = ({}) => <div className="vehiclePage">
   </div>
    </div>
    <div className="imgB">
-   <ImageButtons/>
+   <ImageButtons
+   img = {sedanImg}
+   />
    <div className="txt_button">
   <CustomButtons
-  text = "SUV"
+  text = "Sedan"
   background = "#FFFFFF"
   width = '130px'
   height = "30px"
@@ -48,10 +58,12 @@ const VehicleType = ({}) => <div className="vehiclePage">
   </div>
   </div>
   <div className="imgB">
-   <ImageButtons/>
+   <ImageButtons
+   img = {motorcycleImg}
+   />
    <div className="txt_button">
   <CustomButtons 
-  text = "SUV"
+  text = "Motorcycle"
   background = "#FFFFFF"
   width = '130px'
   height = "30px"

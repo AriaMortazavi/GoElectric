@@ -6,7 +6,6 @@ import Header from '../../comps/Header';
 import Indicator from '../../comps/Indicator';
 import QuestionBoxes from '../../comps/QuestionBoxes';
 import HomeButton from '../../comps/HomeButton';
-import slider from '../../comps/Slider';
 import FooterButton1 from '../../comps/FooterButton1';
 import FooterButton2 from '../../comps/FooterButton2';
 import Slider from '../../comps/Slider';
@@ -17,7 +16,9 @@ const KilometerCounter = ({}) => <div className="KilometerCounterPage">
   />
   </div>
   <div className="questions">
-  <QuestionBoxes/>
+  <QuestionBoxes
+  text = "On average, how many kilometres do you drive every year?"
+  />
   </div>
   <div className="slider">
     <Slider/>

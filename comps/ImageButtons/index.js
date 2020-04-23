@@ -3,9 +3,9 @@ import './imagebuttons.css';
 
 const dImage = require('./default.jpg');
 
-const ImageButtons = () => <div>
+const ImageButtons = ({img}) => <div>
 
-<img src ={dImage} className="imageCont"/>
+<img src ={img} className="imageCont"/>
 
 </div>
 
