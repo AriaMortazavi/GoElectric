@@ -28,17 +28,23 @@ const KilometerCounter = ({}) => <div className="KilometerCounterPage">
     active3 = "orange"
   
   />
-  <div className="roundHome">
-  <HomeButton/>
-  </div>
-  <div className="footerB">
-  <FooterButton1
-  padding = "0px"
-  />
-  </div>
-  <div className="footerF">
-  <FooterButton2/>
-  </div>
+  <Link href = "/Page1" >
+    <div className="roundHome">
+    <HomeButton/>
+    </div>
+  </Link>
+  <Link href = "/VehicleType" >
+    <div className="footerB">
+    <FooterButton1
+    padding = "0px"
+    />
+    </div>
+  </Link>
+  <Link href = "/ResultsPage" >
+    <div className="footerF">
+    <FooterButton2/>
+    </div>
+  </Link>
 </div>
 
 KilometerCounter.defaultProps = {

@@ -34,18 +34,19 @@
 
 .roundHome{
     cursor: pointer;
+    z-index: 3
 }
 
 .footerB{
     position: absolute;
     top: 780px; 
-    z-index: -1;
     left: 5px;
+    z-index: 2
 }
 
 .footerF{
     position: absolute;
     top: 780px;  
     left: 5px;
-    z-index: -1;
+    z-index: 1
 }
