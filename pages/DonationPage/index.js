@@ -10,7 +10,7 @@ import Icon from '../../comps/Icon';
 
 const DonationPage = () => {
 
-    return <div id="results_page">
+    return <div id="donation_page">
 
         <div className="header_donation_page">
             <Header
@@ -20,17 +20,18 @@ const DonationPage = () => {
 
         <QuestionBoxes
             margin="0px 0px 50px 0px"
+            size = "18px"
             text="Consider donating to TeamTrees.org so they can plant trees all around the world?
             Every dollar equals to 1 tree planted.!"
         />
 
         <Icon />
 
-        <CustomButtons
+        <a href="https://teamtrees.org/"><CustomButtons
             text="Sure!"
             width="230px"
             margin="20px"
-        />
+        /></a>
 
         <CustomButtons
             text="No Thank You"

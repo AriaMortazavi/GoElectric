@@ -6,3 +6,16 @@
     position: absolute;
     bottom: 140px;
 }
+
+#donation_page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+    height: 812px;
+}
+
+#donation_page a {
+    text-decoration: none;
+}
