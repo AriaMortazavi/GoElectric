@@ -1,0 +1,51 @@
+.vehiclePage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 375px;
+    height: 812px;
+}
+
+.header{
+    margin-bottom: 15px;
+}
+.questions{
+    margin-bottom: 20px;
+}
+
+.imgB{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.imgB:hover{
+    cursor: pointer;
+}
+
+.txt_button{
+    position: relative;
+    bottom: 20px;
+}
+
+.roundHome{
+    cursor: pointer;
+}
+
+.footerB{
+    position: absolute;
+    top: 780px; 
+    z-index: -1;
+    left: 5px;
+}
+
+.footerF{
+    position: absolute;
+    top: 780px;  
+    left: 5px;
+    z-index: -1;
+}

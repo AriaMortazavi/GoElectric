@@ -1,8 +1,8 @@
 import React from 'react';
 import "./cb.css";
 
-const CustomButton = ({text, fontSize, background, fromclick, width, height, color}) => <div id="button_parent"
-    style={{fontSize, width, height, background, color}}
+const CustomButton = ({text, fontSize, background, fromclick, width, height, color, padding}) => <div id="button_parent"
+    style={{fontSize, width, height, background, color, padding}}
     className="custom_button_box">
     <div className="custom_button_box_inner"
     onClick={fromclick}>
@@ -16,10 +16,11 @@ function buttonClick(){
 CustomButton.defaultProps = {
     fromclick:buttonClick,
     text : "Gasoline",
-    width : "250px",
-    height : "40px",
+    width : "130px",
+    height : "28px",
     background : "#80AD4D",
     color: "white", 
+    padding: "20px"
 }
 export default CustomButton;
 

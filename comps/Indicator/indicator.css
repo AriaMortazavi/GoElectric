@@ -15,7 +15,7 @@
 }
 
 #dot_active {
-    position: absolute;
+    position: static;
     background-color: rgb(252, 131, 110);
     border: none;
     width: 12px;
