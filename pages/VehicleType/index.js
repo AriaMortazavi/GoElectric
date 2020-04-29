@@ -15,6 +15,24 @@ const suvImg = require('./suv.png');
 const sedanImg = require('./sedan.png');
 const motorcycleImg = require('./motorcycle.png');
 
+function sedanFuel (){
+  var vehicleOption = sedan
+  sedanCostPerOneThousand == fuelType * 87
+  sedanBurnPerOneThousand == burnType * 0.45
+  }
+
+    function SUVFuel (){
+      var vehicleOption = SUV
+      SUVCostPerOneThousand == fuelType * 140
+      SUVBurnPerOneThousand == burnType * 0.72
+      }
+
+    function motorcycleFuel (){
+      var vehicleOption = motorcycle
+      motorcycleCostPerOneThousand == fuelType * 34
+      motorcycleBurnPerOneThousand == burnType * 0.17
+      }
+
 const VehicleType = ({}) => <div className="vehiclePage">
   <div className="header">
   <Header
