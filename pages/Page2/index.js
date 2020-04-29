@@ -10,6 +10,30 @@ import Indicator from '../../comps/Indicator';
 import './page2.css';
 import Link from 'next/link';
 
+
+var fuelOption = '';
+
+function pickedGas(){
+    fuelOption == "gas";
+    pickFuel();
+}
+
+function pickedDisel(){
+    fuelOption == "disel";
+    pickFuel();
+}
+
+function pickFuel(){
+    if(fuelOption == "gas"){
+        fuelType == 1;
+        burnType == 1;
+    }else if(fuelOption == "disel"){
+        fuelType == 1.3;
+        burnType == 0.6;
+    }
+}
+
+
 const imageOne = require("./gasoline.png");
 const imageTwo = require("../Page2/deisel.png");
 
@@ -24,7 +48,7 @@ const Page2 = ({ img }) => <div className="main2">
 
     <Link href="/VehicleType">
     <div className="buttonOne">
-        <CustomButtons width="260px" height="52px" padding="none" />
+        <CustomButtons width="260px" height="52px" padding="none" onclick={pickedGas}/>
     </div>
     </Link>
 
@@ -34,7 +58,7 @@ const Page2 = ({ img }) => <div className="main2">
     <Link href="/VehicleType">
 
     <div className="buttonTwo">
-        <CustomButtons width="260px" height="52px" padding="none" text="Diesel" />
+        <CustomButtons width="260px" height="52px" padding="none" text="Diesel" onclick={pickedDisel}/>
     </div>
     
     </Link>
