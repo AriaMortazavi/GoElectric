@@ -12,6 +12,8 @@ import Link from 'next/link';
 
 
 var fuelOption = '';
+var fuelType;
+var burnType;
 
 function pickedGas(){
     fuelOption == "gas";

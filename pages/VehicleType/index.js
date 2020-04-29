@@ -15,112 +15,122 @@ const suvImg = require('./suv.png');
 const sedanImg = require('./sedan.png');
 const motorcycleImg = require('./motorcycle.png');
 
-var vehicleOption = "unknown"
+var vehicleOption = "unknown";
 
-function sedanFuel (){
-  vehicleOption = "sedan"
-  sedanCostPerOneThousand == fuelType * 87
-  sedanBurnPerOneThousand == burnType * 0.45
-  }
+var sedanCostPerOneThousand;
+var sedanBurnPerOneThousand;
 
-    function SUVFuel (){
-      vehicleOption = "SUV"
-      SUVCostPerOneThousand == fuelType * 140
-      SUVBurnPerOneThousand == burnType * 0.72
-      }
+var SUVCostPerOneThousand;
+var SUVBurnPerOneThousand;
 
-    function motorcycleFuel (){
-      vehicleOption = "motorcycle"
-      motorcycleCostPerOneThousand == fuelType * 34
-      motorcycleBurnPerOneThousand == burnType * 0.17
-      }
+var motorcycleCostPerOneThousand;
+var motorcycleCostPerOneThousand;
 
-const VehicleType = ({}) => <div className="vehiclePage">
+
+function sedanFuel() {
+  vehicleOption = "sedan";
+  sedanCostPerOneThousand == fuelType * 87;
+  sedanBurnPerOneThousand == burnType * 0.45;
+}
+
+function SUVFuel() {
+  vehicleOption = "SUV";
+  SUVCostPerOneThousand == fuelType * 140;
+  SUVBurnPerOneThousand == burnType * 0.72;
+}
+
+function motorcycleFuel() {
+  vehicleOption = "motorcycle";
+  motorcycleCostPerOneThousand == fuelType * 34;
+  motorcycleCostPerOneThousand == burnType * 0.17;
+}
+
+const VehicleType = ({ }) => <div className="vehiclePage">
   <div className="header">
-  <Header
-  />
+    <Header
+    />
   </div>
   <div className="questions">
-  <QuestionBoxes
-  text = "What type of vehicle do you currently own?"
-  />
+    <QuestionBoxes
+      text="What type of vehicle do you currently own?"
+    />
   </div>
-  <Link href = "/KilometerCounter" > 
-      <div className="imgB">
-      <ImageButtons
-      img = {suvImg}
-      />
-      <div className="txt_button">
-      <CustomButtons 
-      text = "SUV"
-      background = "#FFFFFF"
-      width = '130px'
-      height = "30px"
-      color = "black"
-      padding = '0px'
-      fontSize = "21px"
-      onclick={sedanFuel}
-      />
-      </div>
-      </div>
-   </Link>
-   <Link href = "/KilometerCounter" >
-      <div className="imgB">
-      <ImageButtons
-      img = {sedanImg}
-      />
-      <div className="txt_button">
-      <CustomButtons
-      text = "Sedan"
-      background = "#FFFFFF"
-      width = '130px'
-      height = "30px"
-      color = "black"
-      padding = '0px'
-      fontSize = "21px"
-      onclick={SUVFuel}
-      />
-      </div>
-      </div>
-  </Link>
-  <Link href = "/KilometerCounter" >
+  <Link href="/KilometerCounter" >
     <div className="imgB">
-    <ImageButtons
-    img = {motorcycleImg}
-    />
-    <div className="txt_button">
-    <CustomButtons 
-    text = "Motorcycle"
-    background = "#FFFFFF"
-    width = '130px'
-    height = "30px"
-    color = "black"
-    padding = '0px'
-    fontSize = "21px"
-    onclick={motorcycleFuel}
-    />
+      <ImageButtons
+        img={suvImg}
+      />
+      <div className="txt_button">
+        <CustomButtons
+          text="SUV"
+          background="#FFFFFF"
+          width='130px'
+          height="30px"
+          color="black"
+          padding='0px'
+          fontSize="21px"
+          onclick={sedanFuel}
+        />
+      </div>
     </div>
+  </Link>
+  <Link href="/KilometerCounter" >
+    <div className="imgB">
+      <ImageButtons
+        img={sedanImg}
+      />
+      <div className="txt_button">
+        <CustomButtons
+          text="Sedan"
+          background="#FFFFFF"
+          width='130px'
+          height="30px"
+          color="black"
+          padding='0px'
+          fontSize="21px"
+          onclick={SUVFuel}
+        />
+      </div>
+    </div>
+  </Link>
+  <Link href="/KilometerCounter" >
+    <div className="imgB">
+      <ImageButtons
+        img={motorcycleImg}
+      />
+      <div className="txt_button">
+        <CustomButtons
+          text="Motorcycle"
+          background="#FFFFFF"
+          width='130px'
+          height="30px"
+          color="black"
+          padding='0px'
+          fontSize="21px"
+          onclick={motorcycleFuel}
+        />
+      </div>
     </div>
   </Link>
   <Indicator
-  border2 = "2px orange solid"
-  active2 = "orange"
+    border2="2px orange solid"
+    active2="orange"
   />
-  <Link href = "/Page1" >
-      <div className="roundHome">
-      <HomeButton/>
-      </div>
+  <Link href="/Page1" >
+    <div className="roundHome">
+      <HomeButton />
+    </div>
   </Link>
-  <Link href = "/Page2" >
+  <Link href="/Page2" >
     <div className="footerB">
-    <FooterButton1
-    padding = "0px"
-    />
-    </div>  
+      <FooterButton1
+        padding="0px"
+      />
+    </div>
   </Link>
-  <Link href = "/KilometerCounter" >
+  <Link href="/KilometerCounter" >
     <div className="footerF">
-    <FooterButton2/>
+      <FooterButton2 />
     </div>
   </Link>
 </div>
