@@ -4,7 +4,6 @@ import "./results.css";
 const car_1_Img = require('./imgs/def.png');
 const car_2_Img = require('./imgs/def.png');
 
-
 const Results = ({gas,carbon,img1,img2}) => <div>
     <div id="results">
         <div id="header">
