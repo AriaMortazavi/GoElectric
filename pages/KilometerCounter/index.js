@@ -6,16 +6,15 @@ import Header from '../../comps/Header';
 import Indicator from '../../comps/Indicator';
 import QuestionBoxes from '../../comps/QuestionBoxes';
 import HomeButton from '../../comps/HomeButton';
-import FooterButton1 from '../../comps/FooterButton1';
-import FooterButton2 from '../../comps/FooterButton2';
+import CustomButtons from '../../comps/CustomButtons';
 import Slider from '../../comps/Slider';
 
 function pickvehicle(){
-  if (vehicleOption == sedan){
+  if (vehicleOption == "sedan"){
     sedanKMCounter()
-  }else if (vehicleOption == SUV){
+  }else if (vehicleOption == "SUV"){
     SUVKMCounter()
-  }else if (vehicleOption == mottorcycle){
+  }else if (vehicleOption == "mottorcycle"){
     motorcycleKMCounter()
   }
 }
@@ -76,6 +75,15 @@ const KilometerCounter = ({}) => <div className="KilometerCounterPage">
   <div className="slider">
     <Slider/>
   </div>
+
+  <div>
+    <CustomButtons
+            text="Next"
+            width="230px"
+            onclick={pickvehicle}
+        />
+</div>
+
   <Indicator
     border3 = "2px orange solid"
     active3 = "orange"
@@ -84,18 +92,6 @@ const KilometerCounter = ({}) => <div className="KilometerCounterPage">
   <Link href = "/Page1" >
     <div className="roundHome">
     <HomeButton/>
-    </div>
-  </Link>
-  <Link href = "/VehicleType" >
-    <div className="footerB">
-    <FooterButton1
-    padding = "0px"
-    />
-    </div>
-  </Link>
-  <Link href = "/ResultsPage" >
-    <div className="footerF">
-    <FooterButton2/>
     </div>
   </Link>
 </div>
