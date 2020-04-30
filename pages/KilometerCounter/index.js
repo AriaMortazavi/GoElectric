@@ -9,15 +9,8 @@ import HomeButton from '../../comps/HomeButton';
 import CustomButtons from '../../comps/CustomButtons';
 import Slider from '../../comps/Slider';
 
-var sedanTotalCost;
-var sedanTotalBurn;
-
-var SUVTotalCost;
-var SUVTotalBurn;
-
-var motorcycleTotalCost;
-var motorcycleTotalBurn;
-
+import { data, ChangeData } from '../data'
+console.log("Went to Kilomiter Counter page", data);
 
 function pickvehicle() {
   if (vehicleOption == "sedan") {
@@ -85,13 +78,15 @@ const KilometerCounter = ({ }) => <div className="KilometerCounterPage">
     <Slider />
   </div>
 
-  <div>
-    <CustomButtons
-      text="Next"
-      width="230px"
-      onclick={pickvehicle}
-    />
-  </div>
+  <Link href="/ResultsPage" >
+    <div>
+      <CustomButtons
+        text="Next"
+        width="230px"
+        onclick={pickvehicle}
+      />
+    </div>
+  </Link>
 
   <Indicator
     border3="2px orange solid"
