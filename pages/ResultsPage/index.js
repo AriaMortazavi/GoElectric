@@ -8,7 +8,7 @@ import HomeButton from '../../comps/HomeButton';
 import Link from 'next/link';
 import VehicleType from '../VehicleType';
 
-import { data, ChangeData } from '../data'
+import { data, ChangeData } from '../../data'
 console.log("Went to the Results Page", data);
 
 // function PrintResults() {

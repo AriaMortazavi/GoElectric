@@ -9,7 +9,7 @@ import HomeButton from '../../comps/HomeButton';
 import CustomButtons from '../../comps/CustomButtons';
 import Slider from '../../comps/Slider';
 
-import { data, ChangeData } from '../data'
+import { data, ChangeData } from '../../data'
 console.log("Went to Kilomiter Counter page", data);
 
 /*function pickvehicle() {
