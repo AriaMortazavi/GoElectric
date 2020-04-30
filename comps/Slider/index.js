@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Slider.css";
 
-import { data, ChangeData } from '../../pages/data'
+import { data, ChangeData } from '../../data'
 console.log("Slider",data);
 
 const Slider = () => <div id="slider">
