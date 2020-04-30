@@ -10,7 +10,7 @@ import Indicator from '../../comps/Indicator';
 import './page2.css';
 import Link from 'next/link';
 
-import { data, ChangeData } from '../data'
+import { data, ChangeData } from '../../data'
 console.log(data);
 
 function pickedGas() {

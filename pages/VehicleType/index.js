@@ -11,7 +11,7 @@ import FooterButton1 from '../../comps/FooterButton1';
 import FooterButton2 from '../../comps/FooterButton2';
 import ImageButtons from '../../comps/ImageButtons';
 
-import { data, ChangeData } from '../data'
+import { data, ChangeData } from '../../data'
 
 console.log("Went to Vehicle Type page", data);
 
