@@ -6,7 +6,7 @@ import Header from '../../comps/Header';
 import Indicator from '../../comps/Indicator';
 import QuestionBoxes from '../../comps/QuestionBoxes';
 import HomeButton from '../../comps/HomeButton';
-import CustomButtons from '../../comps/test';
+import CustomButtons from '../../comps/CustomButtons';
 import FooterButton1 from '../../comps/FooterButton1';
 import FooterButton2 from '../../comps/FooterButton2';
 import ImageButtons from '../../comps/ImageButtons';
