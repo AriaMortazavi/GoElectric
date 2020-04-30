@@ -8,7 +8,10 @@ import HomeButton from '../../comps/HomeButton';
 import Link from 'next/link';
 import VehicleType from '../VehicleType';
 
-function PrintSavings() {
+import { data, ChangeData } from '../data'
+console.log(data);
+
+function PrintResults() {
     if (vehicleOption == "sedan") {
         document.querySelector("#gas_save").innerText = sedanTotalCost;
         document.querySelector("#carbon_produce").innerText = sedanTotalBurn;
@@ -21,9 +24,7 @@ function PrintSavings() {
     }
 }
 
-function PrintCarbon() {
-
-}
+PrintResults();
 
 const ResultsPage = () => {
 

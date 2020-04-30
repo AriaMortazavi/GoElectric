@@ -11,41 +11,43 @@ import FooterButton1 from '../../comps/FooterButton1';
 import FooterButton2 from '../../comps/FooterButton2';
 import ImageButtons from '../../comps/ImageButtons';
 
+import { data, ChangeData } from '../data'
+
+console.log("Went to Vehicle Type page", data);
+
 const suvImg = require('./suv.png');
 const sedanImg = require('./sedan.png');
 const motorcycleImg = require('./motorcycle.png');
 
-var vehicleOption = "unknown";
-
-var sedanCostPerOneThousand;
-var sedanBurnPerOneThousand;
-
-var SUVCostPerOneThousand;
-var SUVBurnPerOneThousand;
-
-var motorcycleCostPerOneThousand;
-var motorcycleCostPerOneThousand;
-
+var fuel = data.fuelType;
+var burn = data.burnType;
 
 function sedanFuel() {
-  vehicleOption = "sedan";
-  sedanCostPerOneThousand == fuelType * 87;
-  sedanBurnPerOneThousand == burnType * 0.45;
+  ChangeData({
+    vehicleOption: "sedan",
+    sedanCostPerOneThousand: fuel * 87,
+    sedanBurnPerOneThousand: burn * 0.45,
+  })
 }
 
 function SUVFuel() {
-  vehicleOption = "SUV";
-  SUVCostPerOneThousand == fuelType * 140;
-  SUVBurnPerOneThousand == burnType * 0.72;
+  ChangeData({
+    vehicleOption: "SUV",
+    SUVCostPerOneThousand: fuel * 140,
+    SUVBurnPerOneThousand: burn * 0.72,
+  })
 }
 
 function motorcycleFuel() {
-  vehicleOption = "motorcycle";
-  motorcycleCostPerOneThousand == fuelType * 34;
-  motorcycleCostPerOneThousand == burnType * 0.17;
+  ChangeData({
+    vehicleOption: "motorcycle",
+    motorcycleCostPerOneThousand: fuel * 34,
+    motorcycleBurnPerOneThousand: burn * 0.17,
+  })
 }
 
 const VehicleType = ({ }) => <div className="vehiclePage">
+
   <div className="header">
     <Header
     />
@@ -56,11 +58,11 @@ const VehicleType = ({ }) => <div className="vehiclePage">
     />
   </div>
   <Link href="/KilometerCounter" >
-    <div className="imgB">
+    <div className="imgB" onClick={SUVFuel}>
       <ImageButtons
         img={suvImg}
       />
-      <div className="txt_button">
+      <div className="txt_button"  >
         <CustomButtons
           text="SUV"
           background="#FFFFFF"
@@ -69,17 +71,16 @@ const VehicleType = ({ }) => <div className="vehiclePage">
           color="black"
           padding='0px'
           fontSize="21px"
-          onclick={sedanFuel}
         />
       </div>
     </div>
   </Link>
   <Link href="/KilometerCounter" >
-    <div className="imgB">
+    <div className="imgB" onClick={sedanFuel}>
       <ImageButtons
         img={sedanImg}
       />
-      <div className="txt_button">
+      <div className="txt_button" >
         <CustomButtons
           text="Sedan"
           background="#FFFFFF"
@@ -88,17 +89,16 @@ const VehicleType = ({ }) => <div className="vehiclePage">
           color="black"
           padding='0px'
           fontSize="21px"
-          onclick={SUVFuel}
         />
       </div>
     </div>
   </Link>
   <Link href="/KilometerCounter" >
-    <div className="imgB">
+    <div className="imgB" onClick={motorcycleFuel}>
       <ImageButtons
         img={motorcycleImg}
       />
-      <div className="txt_button">
+      <div className="txt_button" >
         <CustomButtons
           text="Motorcycle"
           background="#FFFFFF"
@@ -107,7 +107,6 @@ const VehicleType = ({ }) => <div className="vehiclePage">
           color="black"
           padding='0px'
           fontSize="21px"
-          onclick={motorcycleFuel}
         />
       </div>
     </div>

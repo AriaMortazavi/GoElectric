@@ -10,36 +10,28 @@ import Indicator from '../../comps/Indicator';
 import './page2.css';
 import Link from 'next/link';
 
+import { data, ChangeData } from '../data'
+console.log(data);
 
-var fuelOption = '';
-var fuelType;
-var burnType;
-
-function pickedGas(){
-    fuelOption == "gas";
-    pickFuel();
+function pickedGas() {
+    ChangeData({
+        fuelType: 1,
+        burnType: 1
+    })
 }
 
-function pickedDisel(){
-    fuelOption == "disel";
-    pickFuel();
-}
-
-function pickFuel(){
-    if(fuelOption == "gas"){
-        fuelType == 1;
-        burnType == 1;
-    }else if(fuelOption == "disel"){
-        fuelType == 1.3;
-        burnType == 0.6;
-    }
+function pickedDisel() {
+    ChangeData({
+        fuelType: 1.3,
+        burnType: 0.6
+    })
 }
 
 
 const imageOne = require("./gasoline.png");
 const imageTwo = require("../Page2/deisel.png");
 
-const Page2 = ({ img }) => <div className="main2">
+const Page2 = () => <div className="main2">
     <Header />
     <div className="questionOne" >
         <QuestionBoxes text="What type of fuel does your vehicle use?" />
@@ -48,33 +40,32 @@ const Page2 = ({ img }) => <div className="main2">
         <ImageButtons img={imageOne} />
     </div>
 
-    <Link href="/VehicleType">
-    <div className="buttonOne">
-        <CustomButtons width="260px" height="52px" padding="none" onclick={pickedGas}/>
-    </div>
+    <Link href="/VehicleType" >
+        <div className="buttonOne" onClick={pickedGas}>
+            <CustomButtons width="260px" height="52px" padding="none" />
+        </div>
     </Link>
 
     <div className="imageTwo">
         <ImageButtons img={imageTwo} />
     </div>
-    <Link href="/VehicleType">
 
-    <div className="buttonTwo">
-        <CustomButtons width="260px" height="52px" padding="none" text="Diesel" onclick={pickedDisel}/>
-    </div>
-    
+    <Link href="/VehicleType">
+        <div className="buttonTwo" onClick={pickedDisel}>
+            <CustomButtons width="260px" height="52px" padding="none" text="Diesel" />
+        </div>
     </Link>
     <div className="indicator">
-        <Indicator 
-          border1 = "2px orange solid"
-          active1 = "orange"
+        <Indicator
+            border1="2px orange solid"
+            active1="orange"
         />
     </div>
     <div className="footer">
-    <Link href="/Page1">
-        <div className="footer1">
-            <FooterButton1 />
-        </div>
+        <Link href="/Page1">
+            <div className="footer1">
+                <FooterButton1 />
+            </div>
         </Link>
 
         <Link href="/VehicleType">

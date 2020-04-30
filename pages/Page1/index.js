@@ -4,7 +4,6 @@ import CustomButton from '../../comps/CustomButtons';
 import HomeHeader from '../../comps/HomeHeader';
 import Link from 'next/link';
 
-
 const Page1 = ({ }) => <div className="main">
     <HomeHeader />
     <Link href="/Page2">
