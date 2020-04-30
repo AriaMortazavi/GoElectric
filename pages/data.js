@@ -21,6 +21,8 @@ export var data = {
 
     motorcycleTotalCost: 0,
     motorcycleTotalBurn: 0,
+
+    input_value:0,
 }
 
 export function ChangeData(d) {

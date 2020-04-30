@@ -12,7 +12,7 @@ import Slider from '../../comps/Slider';
 import { data, ChangeData } from '../data'
 console.log("Went to Kilomiter Counter page", data);
 
-function pickvehicle() {
+/*function pickvehicle() {
   if (vehicleOption == "sedan") {
     sedanKMCounter();
   } else if (vehicleOption == "SUV") {
@@ -62,6 +62,82 @@ function motorcycleKMCounter() {
     motorcycleTotalCost = motorcycleCostPerOneThousand * 30;
     motorcycleTotalBurn == motorcycleBurnPerOneThousand * 30;
   }
+} */
+
+var SedanCost = data.sedanCostPerOneThousand;
+var SedanBurn = data.sedanBurnPerOneThousand;
+var SUVCost = data.SUVCostPerOneThousand;
+var SUVBurn = data.SUVBurnPerOneThousand;
+var MotoCost = data.motorcycleCostPerOneThousand;
+var MotoBurn = data.motorcycleBurnPerOneThousand;
+var vehicle = data.vehicleOption;
+var slider_value = data.input_value;
+
+function sedanKMCounter() {
+  if(slider_value === 1){
+    ChangeData({
+      SedanCost: sedanCostPerOneThousand * 10,
+      SedanBurn: sedanBurnPerOneThousand * 10,
+    })
+  } else if(slider_value === 2){
+    ChangeData({
+      SedanCost: sedanCostPerOneThousand * 20,
+      SedanBurn: sedanBurnPerOneThousand * 20,
+    })
+  } else if(slider_value === 3){
+    ChangeData({
+      SedanCost: sedanCostPerOneThousand * 30,
+      SedanBurn: sedanBurnPerOneThousand * 30,
+    })
+  }
+}
+
+function SUVKMCounter() {
+  if(slider_value === 1){
+    ChangeData({
+      SUVCost: SUVCostPerOneThousand * 10,
+      SUVBurn: SUVBurnPerOneThousand * 10,
+    })
+  } else if(slider_value === 2){
+    ChangeData({
+      SUVCost: SUVCostPerOneThousand * 20,
+      SUVBurn: SUVBurnPerOneThousand * 20,
+    })
+  } else if(slider_value === 3){
+    ChangeData({
+      SUVCost: SUVCostPerOneThousand * 30,
+      SUVBurn: SUVBurnPerOneThousand * 30,
+    })
+  }
+}
+
+function motorcycleKMCounter() {
+  if(slider_value === 1){
+    ChangeData({
+      MotoCost: motorcycleCostPerOneThousand * 10,
+      MotoBurn: motorcycleBurnPerOneThousand * 10,
+    })
+  } else if(slider_value === 2){
+    ChangeData({
+      MotoCost: motorcycleCostPerOneThousand * 20,
+      MotoBurn: motorcycleBurnPerOneThousand * 20,
+    })
+  } else if(slider_value === 3){
+    ChangeData({
+      MotoCost: motorcycleCostPerOneThousand * 30,
+      MotoBurn: motorcycleBurnPerOneThousand * 30,
+    })
+  }
+}
+
+function ToResults() {
+  if (vehicle == "sedan") {
+    sedanKMCounter();
+  } else if (vehicle == "SUV") {
+    SUVKMCounter();
+  } else if (vehicle == "motorcycle") {
+    motorcycleKMCounter();
+  }
 }
 
 const KilometerCounter = ({ }) => <div className="KilometerCounterPage">
@@ -83,7 +159,7 @@ const KilometerCounter = ({ }) => <div className="KilometerCounterPage">
       <CustomButtons
         text="Next"
         width="230px"
-        onclick={pickvehicle}
+        onclick={ToResults}
       />
     </div>
   </Link>
