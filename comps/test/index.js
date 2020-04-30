@@ -1,4 +1,4 @@
-import React from './node_modules/react';
+import React from 'react';
 import "./cb.css";
 
 const CustomButton = ({text, fontSize, background, fromclick, width, height, color, padding, margin}) => <div id="button_parent"

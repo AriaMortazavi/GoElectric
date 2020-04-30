@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../../comps/Header';
-import CustomButtons from '../../comps/CustomButtons';
+import CustomButtons from '../../comps/test';
 import QuestionBoxes from '../../comps/QuestionBoxes';
 import ImageButtons from '../../comps/ImageButtons';
 import FooterButton1 from '../../comps/FooterButton1';
