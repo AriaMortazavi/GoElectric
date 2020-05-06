@@ -16,7 +16,7 @@ const Page1 = ({ }) => <div className="main">
                 padding="0px" />
         </div>
     </Link>
-    <p className="terms">Please review our Terms of Service</p>
+    <p className="terms_text">Please review our Terms of Service</p>
 </div>
 
 Page1.defaultProps = {

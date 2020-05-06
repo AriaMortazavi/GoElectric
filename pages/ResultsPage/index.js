@@ -6,25 +6,22 @@ import Results from '../../comps/Results';
 import CustomButtons from '../../comps/CustomButtons';
 import HomeButton from '../../comps/HomeButton';
 import Link from 'next/link';
-import VehicleType from '../VehicleType';
 
 import { data, ChangeData } from '../../data'
 console.log("Went to the Results Page", data);
 
-// function PrintResults() {
-//     if (vehicleOption == "sedan") {
-//         document.querySelector("#gas_save").innerText = sedanTotalCost;
-//         document.querySelector("#carbon_produce").innerText = sedanTotalBurn;
-//     } else if (vehicleOption == "SUV") {
-//         document.querySelector("#gas_save").innerText = SUVTotalCost;
-//         document.querySelector("#carbon_produce").innerText = SUVTotalBurn;
-//     } else if (vehicleOption == "motorcycle") {
-//         document.querySelector("#gas_save").innerText = motorcycleTotalCost;
-//         document.querySelector("#carbon_produce").innerText = motorcycleTotalBurn;
-//     }
-// }
+var vehicle = data.vehicleOption;
 
-// PrintResults();
+var sedanSave = data.sedanTotalCost;
+var sedanProduce = data.sedanTotalBurn;
+
+var SUVSave = data.SUVTotalCost;
+var SUVProduce = data.SUVTotalBurn;
+
+var motorcycleSave = data.motorcycleTotalCost;
+var motorcycleProduce = data.motorcycleTotalBurn;
+
+
 
 const ResultsPage = () => {
 
