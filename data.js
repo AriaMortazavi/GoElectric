@@ -13,16 +13,10 @@ export var data = {
     motorcycleCostPerOneThousand: 0,
     motorcycleBurnPerOneThousand: 0,
 
-    sedanTotalCost: 0,
-    sedanTotalBurn: 0,
-
-    SUVTotalCost: 0,
-    SUVTotalBurn: 0,
-
-    motorcycleTotalCost: 0,
-    motorcycleTotalBurn: 0,
-
     input_value:0,
+
+    gas:0,
+    carbon:0,
 }
 
 export function ChangeData(d) {

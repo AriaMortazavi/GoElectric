@@ -8,86 +8,33 @@ import QuestionBoxes from '../../comps/QuestionBoxes';
 import HomeButton from '../../comps/HomeButton';
 import CustomButtons from '../../comps/CustomButtons';
 import Slider from '../../comps/Slider';
+import {slider_value} from '../../comps/Slider';
 
 import { data, ChangeData } from '../../data'
-console.log("Went to Kilomiter Counter page", data);
 
-/*function pickvehicle() {
-  if (vehicleOption == "sedan") {
-    sedanKMCounter();
-  } else if (vehicleOption == "SUV") {
-    SUVKMCounter();
-  } else if (vehicleOption == "motorcycle") {
-    motorcycleKMCounter();
-  }
-}
-
-function sedanKMCounter() {
-  var sliderInput = document.getElementById('inputVal');
-  if (sliderInput.value == 1) {
-    sedanTotalCost = sedanCostPerOneThousand * 10;
-    sedanTotalBurn == sedanBurnPerOneThousand * 10;
-  } else if (sliderInput.value == 2) {
-    sedanTotalCost = sedanCostPerOneThousand * 20;
-    sedanTotalBurn == sedanBurnPerOneThousand * 20;
-  } else if (sliderInput.value == 3) {
-    sedanTotalCost = sedanCostPerOneThousand * 30;
-    sedanTotalBurn == sedanBurnPerOneThousand * 30;
-  }
-}
-
-function SUVKMCounter() {
-  var sliderInput = document.getElementById('inputVal');
-  if (sliderInput.value == 1) {
-    SUVTotalCost = SUVCostPerOneThousand * 10;
-    SUVTotalBurn == SUVBurnPerOneThousand * 10;
-  } else if (sliderInput.value == 2) {
-    SUVTotalCost = SUVCostPerOneThousand * 20;
-    SUVTotalBurn == SUVBurnPerOneThousand * 20;
-  } else if (sliderInput.value == 3) {
-    SUVTotalCost = SUVCostPerOneThousand * 30;
-    SUVTotalBurn == SUVBurnPerOneThousand * 30;
-  }
-}
-
-function motorcycleKMCounter() {
-  var sliderInput = document.getElementById('inputVal');
-  if (sliderInput.value == 1) {
-    motorcycleTotalCost = motorcycleCostPerOneThousand * 10;
-    motorcycleTotalBurn == motorcycleBurnPerOneThousand * 10;
-  } else if (sliderInput.value == 2) {
-    motorcycleTotalCost = motorcycleCostPerOneThousand * 20;
-    motorcycleTotalBurn == motorcycleBurnPerOneThousand * 20;
-  } else if (sliderInput.value == 3) {
-    motorcycleTotalCost = motorcycleCostPerOneThousand * 30;
-    motorcycleTotalBurn == motorcycleBurnPerOneThousand * 30;
-  }
-} */
-
-var SedanCost = data.sedanCostPerOneThousand;
-var SedanBurn = data.sedanBurnPerOneThousand;
-var SUVCost = data.SUVCostPerOneThousand;
-var SUVBurn = data.SUVBurnPerOneThousand;
-var MotoCost = data.motorcycleCostPerOneThousand;
-var MotoBurn = data.motorcycleBurnPerOneThousand;
+var Sedan1KCost = data.sedanCostPerOneThousand;
+var Sedan1KBurn = data.sedanBurnPerOneThousand;
+var SUV1KCost = data.SUVCostPerOneThousand;
+var SUV1KBurn = data.SUVBurnPerOneThousand;
+var Moto1KCost = data.motorcycleCostPerOneThousand;
+var Moto1KBurn = data.motorcycleBurnPerOneThousand;
 var vehicle = data.vehicleOption;
-var slider_value = data.input_value;
 
 function sedanKMCounter() {
   if(slider_value === 1){
     ChangeData({
-      SedanCost: sedanCostPerOneThousand * 10,
-      SedanBurn: sedanBurnPerOneThousand * 10,
+      gas: parseInt(Sedan1KCost * 10),
+      carbon: (Sedan1KBurn * 10).toFixed(2),
     })
   } else if(slider_value === 2){
     ChangeData({
-      SedanCost: sedanCostPerOneThousand * 20,
-      SedanBurn: sedanBurnPerOneThousand * 20,
+      gas: parseInt(Sedan1KCost * 20),
+      carbon: (Sedan1KBurn * 20).toFixed(2),
     })
   } else if(slider_value === 3){
     ChangeData({
-      SedanCost: sedanCostPerOneThousand * 30,
-      SedanBurn: sedanBurnPerOneThousand * 30,
+      gas: parseInt(Sedan1KCost * 30),
+      carbon: (Sedan1KBurn * 30).toFixed(2),
     })
   }
 }
@@ -95,18 +42,18 @@ function sedanKMCounter() {
 function SUVKMCounter() {
   if(slider_value === 1){
     ChangeData({
-      SUVCost: SUVCostPerOneThousand * 10,
-      SUVBurn: SUVBurnPerOneThousand * 10,
+      gas: parseInt(SUV1KCost * 10),
+      carbon: (SUV1KBurn * 10).toFixed(2),
     })
   } else if(slider_value === 2){
     ChangeData({
-      SUVCost: SUVCostPerOneThousand * 20,
-      SUVBurn: SUVBurnPerOneThousand * 20,
+      gas: parseInt(SUV1KCost * 20),
+      carbon: (SUV1KBurn * 20).toFixed(2),
     })
   } else if(slider_value === 3){
     ChangeData({
-      SUVCost: SUVCostPerOneThousand * 30,
-      SUVBurn: SUVBurnPerOneThousand * 30,
+      gas: parseInt(SUV1KCost * 30).toFixed(2),
+      carbon: (SUV1KBurn * 30).toFixed(2),
     })
   }
 }
@@ -114,18 +61,18 @@ function SUVKMCounter() {
 function motorcycleKMCounter() {
   if(slider_value === 1){
     ChangeData({
-      MotoCost: motorcycleCostPerOneThousand * 10,
-      MotoBurn: motorcycleBurnPerOneThousand * 10,
+      gas: parseInt(Moto1KCost * 10),
+      carbon: (Moto1KBurn * 10).toFixed(2),
     })
   } else if(slider_value === 2){
     ChangeData({
-      MotoCost: motorcycleCostPerOneThousand * 20,
-      MotoBurn: motorcycleBurnPerOneThousand * 20,
+      gas: parseInt(Moto1KCost * 20),
+      carbon: (Moto1KBurn * 20).toFixed(2),
     })
   } else if(slider_value === 3){
     ChangeData({
-      MotoCost: motorcycleCostPerOneThousand * 30,
-      MotoBurn: motorcycleBurnPerOneThousand * 30,
+      gas: parseInt(Moto1KCost * 30),
+      carbon: (Moto1KBurn * 30).toFixed(2),
     })
   }
 }
@@ -139,6 +86,8 @@ function ToResults() {
     motorcycleKMCounter();
   }
 }
+
+console.log("Went to Kilomiter Counter page", data);
 
 const KilometerCounter = ({ }) => <div className="KilometerCounterPage">
   <div className="header">
@@ -155,11 +104,10 @@ const KilometerCounter = ({ }) => <div className="KilometerCounterPage">
   </div>
 
   <Link href="/ResultsPage" >
-    <div>
+    <div onClick={ToResults}>
       <CustomButtons
         text="Next"
         width="230px"
-        onclick={ToResults}
       />
     </div>
   </Link>
@@ -167,7 +115,6 @@ const KilometerCounter = ({ }) => <div className="KilometerCounterPage">
   <Indicator
     border3="2px orange solid"
     active3="orange"
-
   />
   <Link href="/Page1" >
     <div className="roundHome">
