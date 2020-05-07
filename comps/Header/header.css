@@ -9,6 +9,10 @@
    width:80px;
    height:80px;
     position: relative;
-    left:20px;
+    left:270px;
     
+}
+.leftarrow{
+   position: relative;
+   bottom:55px;
 }
