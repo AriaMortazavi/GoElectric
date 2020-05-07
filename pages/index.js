@@ -4,7 +4,7 @@ import "./index.css";
 
 const index = () => 
 <div>
-<Link href="/ResultsPage"><button>App</button></Link>
+<Link href="/Page1"><button>App</button></Link>
 </div>
 
 export default index;

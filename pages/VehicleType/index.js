@@ -9,7 +9,7 @@ import HomeButton from '../../comps/HomeButton';
 import CustomButtons from '../../comps/CustomButtons';
 import ImageButtons from '../../comps/ImageButtons';
 
-import { data, ChangeData } from '../data'
+import { data, ChangeData } from '../../data'
 
 console.log("Went to Vehicle Type page", data);
 
