@@ -1,5 +1,6 @@
 import React from 'react';
 import './header.css';
+import {FaChevronLeft} from "react-icons/fa";
 
 const defImg = require('./logo.png');
 
@@ -8,6 +9,9 @@ const Header = ({ logo, margin }) => <div
     className="header">
     {<div>
         <img src={logo} className="logo" />
+        <div className="leftarrow">
+        <FaChevronLeft size={40} color = "white"/>
+    </div>
     </div>}
 </div>
 

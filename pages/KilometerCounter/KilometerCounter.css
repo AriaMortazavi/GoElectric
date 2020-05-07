@@ -12,3 +12,15 @@
     margin-bottom: 247px;
     margin-top: 150px;
 }
+
+#KMCounterNextButton{
+    position: relative;
+    bottom: 20px;
+}
+
+.header_KmCounter{
+        position: relative;
+        top: 5px;
+        margin-bottom: 35px;
+
+}

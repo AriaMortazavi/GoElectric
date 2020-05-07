@@ -7,8 +7,6 @@ import Indicator from '../../comps/Indicator';
 import QuestionBoxes from '../../comps/QuestionBoxes';
 import HomeButton from '../../comps/HomeButton';
 import CustomButtons from '../../comps/CustomButtons';
-import FooterButton1 from '../../comps/FooterButton1';
-import FooterButton2 from '../../comps/FooterButton2';
 import ImageButtons from '../../comps/ImageButtons';
 
 import { data, ChangeData } from '../../data'
@@ -48,7 +46,7 @@ function motorcycleFuel() {
 
 const VehicleType = ({ }) => <div className="vehiclePage">
 
-  <div className="header">
+  <div className="headerVehicletype">
     <Header
     />
   </div>
@@ -118,18 +116,6 @@ const VehicleType = ({ }) => <div className="vehiclePage">
   <Link href="/Page1" >
     <div className="roundHome">
       <HomeButton />
-    </div>
-  </Link>
-  <Link href="/Page2" >
-    <div className="footerB">
-      <FooterButton1
-        padding="0px"
-      />
-    </div>
-  </Link>
-  <Link href="/KilometerCounter" >
-    <div className="footerF">
-      <FooterButton2 />
     </div>
   </Link>
 </div>

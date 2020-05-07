@@ -3,7 +3,6 @@ import './donation.css';
 import Header from '../../comps/Header';
 import QuestionBoxes from '../../comps/QuestionBoxes';
 import CustomButtons from '../../comps/CustomButtons';
-import HomeButton from '../../comps/HomeButton';
 import Icon from '../../comps/Icon';
 import Link from 'next/link';
 

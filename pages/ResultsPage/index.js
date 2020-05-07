@@ -26,11 +26,11 @@ var motorcycleProduce = data.motorcycleTotalBurn;
 const ResultsPage = () => {
 
     return <div id="results_page">
-
+<div className="results_header">
         <Header
             margin="0px 0px 10px 0px"
         />
-
+</div>
         <QuestionBoxes
             margin="0px 0px 10px 0px"
             text="Results are in!"
@@ -46,7 +46,7 @@ const ResultsPage = () => {
 
         </Link>
 
-        <Link href="/Page1"><div id="home_button"><HomeButton /></div>
+        <Link href="/Page1"><div className="home_button"><HomeButton /></div>
         </Link>
 
 

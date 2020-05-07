@@ -3,8 +3,6 @@ import Header from '../../comps/Header';
 import CustomButtons from '../../comps/CustomButtons';
 import QuestionBoxes from '../../comps/QuestionBoxes';
 import ImageButtons from '../../comps/ImageButtons';
-import FooterButton1 from '../../comps/FooterButton1';
-import FooterButton2 from '../../comps/FooterButton2';
 import HomeButton from '../../comps/HomeButton';
 import Indicator from '../../comps/Indicator';
 import './page2.css';
@@ -32,7 +30,9 @@ const imageOne = require("./gasoline.png");
 const imageTwo = require("../Page2/deisel.png");
 
 const Page2 = () => <div className="main2">
-    <Header />
+    <div className="page2_header">
+        <Header />
+    </div>
     <div className="questionOne" >
         <QuestionBoxes text="What type of fuel does your vehicle use?" />
     </div>
@@ -61,24 +61,11 @@ const Page2 = () => <div className="main2">
             active1="orange"
         />
     </div>
-    <div className="footer">
-        <Link href="/Page1">
-            <div className="footer1">
-                <FooterButton1 />
-            </div>
-        </Link>
-
-        <Link href="/VehicleType">
-            <div className="footer2">
-                <FooterButton2 />
-            </div>
-        </Link>
 
         <Link href="/Page1"><div className="homeButton"><HomeButton /></div>
         </Link>
 
     </div>
-</div>
 
 Page2.defaultProps = {
 

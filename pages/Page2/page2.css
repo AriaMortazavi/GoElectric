@@ -1,59 +1,40 @@
 .main2 {
-    width:375px;
-    height:812px;
-    /* background-color: #BED; */
     display: flex;
-    align-items: center;
     flex-direction: column;
-}
-.imageOne {
-    top:130px;
-    position: relative;
-}
-.questionOne {
-    position: relative;
-    top:50px;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    width: 375px;
+    height: 812px;
 }
-.buttonOne {
+.page2_header{
+    margin-bottom: 35px;
     position: relative;
-    top:140px;
+    bottom: 62px;
 }
-.imageTwo {
-    top:180px;
+.imageOne{
     position: relative;
+    bottom: 57px;
 }
-.buttonTwo {
+.imageTwo{
     position: relative;
-    top:190px;
+    bottom: 37px;
 }
-.indicator {
+.buttonOne{
     position: relative;
-    top:230px;
+    bottom: 57px;
 }
-.footer {
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    top:812px;
-    /* background-color: #eebbdd; */
-    width:375px;
-    height:84px;
+.buttonTwo{
+    position: relative;
+    bottom: 30px;
 }
-.footer1{
-    bottom:0px;
-    position: absolute;
-    z-index: 2;
-}
-.footer2 {
-    left:-2px;
-    position: absolute;
-    bottom:0px;
-    z-index: 1;
+.questionOne{
+    position: relative;
+    bottom: 62px;
+    margin-bottom: 30px;
 }
 .homeButton {
-    left:150px;
-    position: absolute;
     cursor: pointer;
-    z-index: 3;
+    position: relative;
+    bottom: 0px;
 }

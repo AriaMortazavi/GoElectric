@@ -8,7 +8,6 @@ import QuestionBoxes from '../../comps/QuestionBoxes';
 import HomeButton from '../../comps/HomeButton';
 import CustomButtons from '../../comps/CustomButtons';
 import Slider from '../../comps/Slider';
-import {slider_value} from '../../comps/Slider';
 
 import { data, ChangeData } from '../../data'
 
@@ -90,7 +89,7 @@ function ToResults() {
 console.log("Went to Kilomiter Counter page", data);
 
 const KilometerCounter = ({ }) => <div className="KilometerCounterPage">
-  <div className="header">
+  <div className="header_KmCounter">
     <Header
     />
   </div>
@@ -104,7 +103,8 @@ const KilometerCounter = ({ }) => <div className="KilometerCounterPage">
   </div>
 
   <Link href="/ResultsPage" >
-    <div onClick={ToResults}>
+    <div id="KMCounterNextButton" onClick={ToResults}>
+
       <CustomButtons
         text="Next"
         width="230px"
