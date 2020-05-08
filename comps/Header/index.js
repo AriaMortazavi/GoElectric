@@ -7,12 +7,13 @@ const defImg = require('./logo.png');
 const Header = ({ logo, margin }) => <div
     style={{ margin: margin }}
     className="header">
-    {<div>
-        <img src={logo} className="logo" />
-        <div className="leftarrow">
+    <div className="arrow">
         <FaChevronLeft size={40} color = "white"/>
     </div>
-    </div>}
+   <div className="logo">
+        <img src={logo} className="logo" />
+    </div>   
+  
 </div>
 
 

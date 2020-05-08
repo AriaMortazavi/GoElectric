@@ -1,18 +1,18 @@
 .main {
-    width:375px;
+    width:100vw;
     height:812px;
     display: inline-flex;
     flex-direction: column;
 }
 .opacity {
-    width:375px;
+    width:100vw;
     height:554px;
     opacity:50% ;
     background-color: rgb(179, 245, 105);
     position: absolute;
 }
 .background{
-    width: 375px;
+    width: 100vw;
     height: 554px;
 }
 .forest {
@@ -25,7 +25,7 @@
     background-color:white;
     position: absolute;
     border-radius: 55px;
-    left:30px;
+    
     top: 225px;
     display: inline-flex;
     justify-content: center;

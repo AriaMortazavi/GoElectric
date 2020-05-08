@@ -1,6 +1,7 @@
 .header {
     display: flex;
-    width:375px;
+    justify-content: space-between;
+    width:100vw;
     height:87px;
     background-color: #80ad4d;
     border-radius:0px 0px 22px 22px;
@@ -9,10 +10,11 @@
    width:80px;
    height:80px;
     position: relative;
-    left:270px;
+margin-right: 8px;
     
 }
-.leftarrow{
+.arrow{
    position: relative;
-   bottom:55px;
+  top:24px;
+  margin-left: 8px;
 }
