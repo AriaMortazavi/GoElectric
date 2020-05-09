@@ -10,19 +10,6 @@ import Link from 'next/link';
 import { data, ChangeData } from '../../data'
 console.log("Went to the Results Page", data);
 
-var vehicle = data.vehicleOption;
-
-var sedanSave = data.sedanTotalCost;
-var sedanProduce = data.sedanTotalBurn;
-
-var SUVSave = data.SUVTotalCost;
-var SUVProduce = data.SUVTotalBurn;
-
-var motorcycleSave = data.motorcycleTotalCost;
-var motorcycleProduce = data.motorcycleTotalBurn;
-
-
-
 const ResultsPage = () => {
 
     return <div id="results_page">

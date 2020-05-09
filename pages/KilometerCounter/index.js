@@ -11,6 +11,8 @@ import Slider from '../../comps/Slider';
 
 import { data, ChangeData } from '../../data'
 
+import {slider_value} from '../../comps/Slider'
+
 var Sedan1KCost = data.sedanCostPerOneThousand;
 var Sedan1KBurn = data.sedanBurnPerOneThousand;
 var SUV1KCost = data.SUVCostPerOneThousand;

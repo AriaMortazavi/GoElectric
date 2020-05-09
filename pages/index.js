@@ -1,10 +1,11 @@
 import Link from 'next/link';
 import Router from "next/router";
 import "./index.css";
+import Page1 from '../pages/Page1'
 
 const index = () => 
 <div>
-<Link href="/Page1"><button>App</button></Link>
+<Page1 />
 </div>
 
 export default index;
