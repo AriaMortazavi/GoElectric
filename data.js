@@ -20,6 +20,6 @@ export var data = {
 }
 
 export function ChangeData(d) {
-    // sessionStorage.setItem("data", JSON.stringify(data));
+    sessionStorage.setItem("data", JSON.stringify(data));
     data = d;
 }
