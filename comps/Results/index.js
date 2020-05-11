@@ -19,6 +19,10 @@ var car_data = {
     suv3: "Porsche Cayenne",
     suv4: "Jaguar I-Pace",
 
+    moto1: "Emmo Zone GTS",
+    moto2: "Zero SR",
+    moto3: "Energica Ego",
+    moto4: "Vespa Elettrica",
 }
 
 var model1;
@@ -37,8 +41,14 @@ var suv2Img = require('./imgs/suv2.jpg');
 var suv3Img = require('./imgs/suv3.jpg');
 var suv4Img = require('./imgs/suv4.jpg');
 
+var moto1Img = require('./imgs/moto1.jpg');
+var moto2Img = require('./imgs/moto2.jpg');
+var moto3Img = require('./imgs/moto3.jpg');
+var moto4Img = require('./imgs/moto4.jpg');
+
+
 export function CarImages() {
-    if (gas_value < 2000) {
+    if (gas_value > 200 && gas_value < 2000) {
         car_1_Img = sedan1Img;
         car_2_Img = sedan2Img;
 
@@ -50,7 +60,7 @@ export function CarImages() {
 
         model1 = car_data.sedan3;
         model2 = car_data.sedan4;
-    //
+        //
     } else if (gas_value > 3000 && gas_value < 4000) {
         car_1_Img = suv1Img;
         car_2_Img = suv2Img;
@@ -63,12 +73,43 @@ export function CarImages() {
 
         model1 = car_data.suv3;
         model2 = car_data.suv4;
-    }
-    //
+        //
+        // } else if (gas_value > 700 && gas_value < 1200) {
+        //     car_1_Img = moto1Img;
+        //     car_2_Img = moto2Img;
 
+        //     model1 = car_data.moto1;
+        //     model2 = car_data.moto2;
+        // } else if (gas_value < 700) {
+        //     car_1_Img = moto3Img;
+        //     car_2_Img = moto4Img;
+
+        //     model1 = car_data.moto3;
+        //     model2 = car_data.moto4;
+    }
 }
 
 CarImages();
+
+function MotoImages() {
+    if (vehicle == "motorcycle") {
+        if (gas_value > 700) {
+            car_1_Img = moto1Img;
+            car_2_Img = moto2Img;
+
+            model1 = car_data.moto1;
+            model2 = car_data.moto2;
+        } else if (gas_value < 700) {
+            car_1_Img = moto3Img;
+            car_2_Img = moto4Img;
+
+            model1 = car_data.moto3;
+            model2 = car_data.moto4;
+        }
+    }
+}
+
+MotoImages();
 
 const Results = ({ gas_input, carbon_input, img1, img2, model1, model2 }) => <div>
     <div id="results">

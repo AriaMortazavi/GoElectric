@@ -64,16 +64,19 @@ function motorcycleKMCounter() {
     ChangeData({
       gas: parseInt(Moto1KCost * 10),
       carbon: (Moto1KBurn * 10).toFixed(2),
+      vehicleOption: vehicle
     })
   } else if(slider_value === 2){
     ChangeData({
       gas: parseInt(Moto1KCost * 20),
       carbon: (Moto1KBurn * 20).toFixed(2),
+      vehicleOption: vehicle
     })
   } else if(slider_value === 3){
     ChangeData({
       gas: parseInt(Moto1KCost * 30),
       carbon: (Moto1KBurn * 30).toFixed(2),
+      vehicleOption: vehicle
     })
   }
 }
