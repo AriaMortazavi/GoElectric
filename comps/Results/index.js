@@ -121,8 +121,8 @@ const Results = ({ gas_input, carbon_input, img1, img2, model1, model2 }) => <di
             $<div id="gas_save">{gas_input}</div> in gas per year
         </div>
         <div id="produce">
-            <span>You produce:</span><br />
-            <div id="carbon_produce">{carbon_input}</div> less metric tons of CO2 per year
+            <span>You prevent producing:</span><br />
+            <div id="carbon_produce">{carbon_input}</div> metric tons of CO2
         </div>
         <div id="suggestion">
             <span>We suggest these cars:</span>
