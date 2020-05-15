@@ -11,7 +11,7 @@ import Slider from '../../comps/Slider';
 
 import { data, ChangeData } from '../../data'
 
-import {slider_value} from '../../comps/Slider'
+import { slider_value } from '../../comps/Slider'
 
 var Sedan1KCost = data.sedanCostPerOneThousand;
 var Sedan1KBurn = data.sedanBurnPerOneThousand;
@@ -22,17 +22,17 @@ var Moto1KBurn = data.motorcycleBurnPerOneThousand;
 var vehicle = data.vehicleOption;
 
 function sedanKMCounter() {
-  if(slider_value === 1){
+  if (slider_value === 1) {
     ChangeData({
       gas: parseInt(Sedan1KCost * 10),
       carbon: (Sedan1KBurn * 10).toFixed(2),
     })
-  } else if(slider_value === 2){
+  } else if (slider_value === 2) {
     ChangeData({
       gas: parseInt(Sedan1KCost * 20),
       carbon: (Sedan1KBurn * 20).toFixed(2),
     })
-  } else if(slider_value === 3){
+  } else if (slider_value === 3) {
     ChangeData({
       gas: parseInt(Sedan1KCost * 30),
       carbon: (Sedan1KBurn * 30).toFixed(2),
@@ -41,17 +41,17 @@ function sedanKMCounter() {
 }
 
 function SUVKMCounter() {
-  if(slider_value === 1){
+  if (slider_value === 1) {
     ChangeData({
       gas: parseInt(SUV1KCost * 10),
       carbon: (SUV1KBurn * 10).toFixed(2),
     })
-  } else if(slider_value === 2){
+  } else if (slider_value === 2) {
     ChangeData({
       gas: parseInt(SUV1KCost * 20),
       carbon: (SUV1KBurn * 20).toFixed(2),
     })
-  } else if(slider_value === 3){
+  } else if (slider_value === 3) {
     ChangeData({
       gas: parseInt(SUV1KCost * 30).toFixed(2),
       carbon: (SUV1KBurn * 30).toFixed(2),
@@ -60,19 +60,19 @@ function SUVKMCounter() {
 }
 
 function motorcycleKMCounter() {
-  if(slider_value === 1){
+  if (slider_value === 1) {
     ChangeData({
       gas: parseInt(Moto1KCost * 10),
       carbon: (Moto1KBurn * 10).toFixed(2),
       vehicleOption: vehicle
     })
-  } else if(slider_value === 2){
+  } else if (slider_value === 2) {
     ChangeData({
       gas: parseInt(Moto1KCost * 20),
       carbon: (Moto1KBurn * 20).toFixed(2),
       vehicleOption: vehicle
     })
-  } else if(slider_value === 3){
+  } else if (slider_value === 3) {
     ChangeData({
       gas: parseInt(Moto1KCost * 30),
       carbon: (Moto1KBurn * 30).toFixed(2),
@@ -82,12 +82,16 @@ function motorcycleKMCounter() {
 }
 
 function ToResults() {
-  if (vehicle == "sedan") {
-    sedanKMCounter();
-  } else if (vehicle == "SUV") {
-    SUVKMCounter();
-  } else if (vehicle == "motorcycle") {
-    motorcycleKMCounter();
+  if (slider_value > 0) {
+    if (vehicle == "sedan") {
+      sedanKMCounter();
+    } else if (vehicle == "SUV") {
+      SUVKMCounter();
+    } else if (vehicle == "motorcycle") {
+      motorcycleKMCounter();
+    }
+  } else {
+    alert("Please, select the amount of KM")
   }
 }
 
