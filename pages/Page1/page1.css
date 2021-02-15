@@ -5,6 +5,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color:#eeeeee;
+    display:flex;
+    align-items:Center;
 }
 .buttonCont {
     width:239px;

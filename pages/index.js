@@ -5,7 +5,9 @@ import Page1 from '../pages/Page1'
 
 const index = () => 
 <div>
+    <Router>
 <Page1 />
+</Router>
 </div>
 
 export default index;

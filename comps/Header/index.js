@@ -9,7 +9,7 @@ const Header = ({ logo, margin }) => <div
     style={{ margin: margin }}
     className="header">
     {<div>
-        <img src={logo} className="logo" />
+        <img src={logo} className="logo" style={{width:"80px", height:"80px"}}/>
         <div className="leftarrow">
         <FaChevronLeft size={40} color = "white" onClick={() => Router.back()}/>
     </div>
